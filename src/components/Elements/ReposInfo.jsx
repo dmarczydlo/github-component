@@ -1,15 +1,27 @@
 import React from 'react';
 import Languages from './Languages';
+import {parseTime} from '../../Utils/parseTime';
 
 const RepoInfo = ({repo, i}) => {
     return (
         <div key={i} className="col-xs-12 col-md-4">
-            <div className="col-xs-12 repository-block shadow">
-                <p><a href={repo.url}>{repo.name}</a></p>
-                <p>{repo.description}</p>
-                <p>{repo.createdAt}</p>
-                <p>{repo.updatedAt}</p>
-                <Languages languages={repo.languages}/>
+            <div className="repository-block shadow">
+                <div className="header">
+                    <a href={repo.url}>{repo.name}</a>
+                </div>
+                <div className="content">
+                    <div className="description">
+                        <p>{repo.description}</p>
+                        <p className="date">Created: {parseTime(repo.createdAt)}</p>
+                        <p className="date">Last update: {parseTime(repo.updatedAt)}</p>
+                    </div>
+                    <div className="languages">
+                        <Languages languages={repo.languages}/>
+                    </div>
+                    <div className="footer">
+                        <a href={repo.url}><i className="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     );

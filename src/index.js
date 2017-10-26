@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo';
 import './index.css';
+import 'font-awesome/css/font-awesome.min.css';
 import config from './../config.json';
 import Repositories from './components/RepositoriesContainer';
 
