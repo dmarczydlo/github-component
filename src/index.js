@@ -23,7 +23,7 @@ const client = new ApolloClient({networkInterface});
 
 ReactDOM.render(
     <ApolloProvider client={client}>
-        <Repositories/>
+        <Repositories type={'slider'} />
     </ApolloProvider>,
     document.getElementById('root'),
 );

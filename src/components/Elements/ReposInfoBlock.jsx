@@ -2,7 +2,7 @@ import React from 'react';
 import Languages from './Languages';
 import {parseTime} from '../../Utils/parseTime';
 
-const RepoInfo = ({repo, i}) => {
+const RepoInfoBlock = ({repo, i}) => {
     return (
         <div key={i} className="col-xs-12 col-md-4">
             <div className="repository-block shadow">
@@ -26,4 +26,4 @@ const RepoInfo = ({repo, i}) => {
         </div>
     );
 };
-export default RepoInfo;
+export default RepoInfoBlock;

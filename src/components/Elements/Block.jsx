@@ -1,12 +1,12 @@
 import React from 'react';
-import RepoInfo from './ReposInfo';
+import RepoInfoBlock from './ReposInfoBlock';
 
 const Block = ({repositories}) => {
     return (
         <div>
             {repositories.map((repo, i) => {
                 const props = {repo, i};
-                return <RepoInfo key={i} {...props} />
+                return <RepoInfoBlock key={i} {...props} />
             })}
         </div>
     );

@@ -13,6 +13,7 @@ const RepositoriesWithData = graphql(Query, {
             return {loading: true};
         }
 
+
         return {
             viewer: data.viewer.name,
             repositories: data.viewer.repositories.nodes.map((repo) => {
