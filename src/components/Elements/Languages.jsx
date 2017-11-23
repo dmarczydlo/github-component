@@ -4,8 +4,7 @@ const Languages = ({languages}) => {
     return (
         <div>
             {languages.map((lang, i) =>
-                <span className="language-block" key={i}>{lang}</span>
-            )}
+                <span className="language-block" key={i}>{lang}</span>)}
         </div>
     );
 };

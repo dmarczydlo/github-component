@@ -1,3 +1,5 @@
-export const parseTime = (timeInput) => {
-    return timeInput.replace('T',' ').replace('Z','');
+const parseTime = (timeInput) => {
+    return timeInput.replace('T', ' ').replace('Z', '');
 };
+
+export default parseTime;

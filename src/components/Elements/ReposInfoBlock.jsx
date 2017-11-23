@@ -1,6 +1,6 @@
 import React from 'react';
 import Languages from './Languages';
-import {parseTime} from '../../Utils/parseTime';
+import parseTime from '../../Utils/parseTime';
 
 const RepoInfoBlock = ({repo, i}) => {
     return (
@@ -16,10 +16,10 @@ const RepoInfoBlock = ({repo, i}) => {
                         <p className="date">Last update: {parseTime(repo.updatedAt)}</p>
                     </div>
                     <div className="languages">
-                        <Languages languages={repo.languages}/>
+                        <Languages languages={repo.languages} />
                     </div>
                     <div className="footer">
-                        <a href={repo.url}><i className="fa fa-github" aria-hidden="true"></i></a>
+                        <a href={repo.url}><i className="fa fa-github" aria-hidden="true" /></a>
                     </div>
                 </div>
             </div>

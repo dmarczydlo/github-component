@@ -1,8 +1,8 @@
+import 'font-awesome/css/font-awesome.min.css';
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo';
 import './index.css';
-import 'font-awesome/css/font-awesome.min.css';
 import config from './../config.json';
 import Repositories from './components/RepositoriesContainer';
 
@@ -16,14 +16,14 @@ networkInterface.use([{
         }
         req.options.headers.authorization = `Bearer ${config.token}`;
         next();
-    }
+    },
 }]);
 
 const client = new ApolloClient({networkInterface});
 
 ReactDOM.render(
     <ApolloProvider client={client}>
-        <Repositories type={'slider'} />
+        <Repositories type="slider" />
     </ApolloProvider>,
     document.getElementById('root'),
 );
