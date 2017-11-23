@@ -1,4 +1,4 @@
-import {gql} from 'react-apollo';
+import gql from 'graphql-tag';
 
 const Query = gql`
   query ($number_of_repos: Int!, $before: String) {

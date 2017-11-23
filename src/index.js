@@ -1,25 +1,32 @@
 import 'font-awesome/css/font-awesome.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo';
+
+import {ApolloClient} from 'apollo-client';
+import {createHttpLink} from 'apollo-link-http';
+import {InMemoryCache} from 'apollo-cache-inmemory/lib';
+import {ApolloProvider} from 'react-apollo';
+import {setContext} from 'apollo-link-context';
+
 import './index.css';
 import config from './config.json';
 import Repositories from './components/RepositoriesContainer';
 
 
-const networkInterface = createNetworkInterface({uri: 'https://api.github.com/graphql'});
-
-networkInterface.use([{
-    applyMiddleware(req, next) {
-        if (!req.options.headers) {
-            req.options.headers = {};
-        }
-        req.options.headers.authorization = `Bearer ${config.token}`;
-        next();
+const middlewareLink = setContext(() => ({
+    headers: {
+        authorization: `Bearer ${config.token}` || null,
     },
-}]);
+}));
 
-const client = new ApolloClient({networkInterface});
+const httpLink = createHttpLink({uri: 'https://api.github.com/graphql'});
+
+const link = middlewareLink.concat(httpLink);
+
+const client = new ApolloClient({
+    link,
+    cache: new InMemoryCache(),
+});
 
 ReactDOM.render(
     <ApolloProvider client={client}>

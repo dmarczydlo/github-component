@@ -64,6 +64,9 @@
     ],
     "react/jsx-filename-extension": [
       0
+    ],
+    "comma-dangle": [
+      0
     ]
   }
 }
