@@ -6,7 +6,7 @@ const Block = ({repositories}) => {
         <div>
             {repositories.map((repo, i) => {
                 const props = {repo, i};
-                return <RepoInfoBlock key={i} {...props} />
+                return <RepoInfoBlock key={i} {...props} />;
             })}
         </div>
     );

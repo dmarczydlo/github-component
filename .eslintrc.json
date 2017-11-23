@@ -1,8 +1,66 @@
 {
-  "extends": "react-app",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": "airbnb",
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "react"
+  ],
   "rules": {
-    "semi": ["error", "never"],
-    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "jsx-quotes": ["error", "prefer-single"]
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      0
+    ],
+    "no-param-reassign": [
+      0
+    ],
+    "react/forbid-prop-types": [
+      0
+    ],
+    "react/jsx-indent-props": [
+      2,
+      4
+    ],
+    "react/jsx-indent": [
+      0
+    ],
+    "react/prefer-stateless-function": [
+      0
+    ],
+    "react/prop-types": [
+      0
+    ],
+    "react/jsx-space-before-closing": [
+      0
+    ],
+    "react/no-multi-comp": [
+      0
+    ],
+    "no-mixed-operators": [
+      0
+    ],
+    "arrow-body-style": [
+      0
+    ],
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "react/no-array-index-key": [
+      0
+    ],
+    "jsx-a11y/anchor-has-content": [
+      0
+    ]
   }
 }
