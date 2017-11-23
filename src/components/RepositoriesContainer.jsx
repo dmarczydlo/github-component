@@ -1,8 +1,7 @@
 import {graphql} from 'react-apollo';
 import Repositories from './Repositories';
-import config from './../../config.json';
+import config from './../config.json';
 import Query from './../Query/getRepositories';
-
 
 const RepositoriesWithData = graphql(Query, {
     options: {variables: {number_of_repos: config.limit, before: null}},

@@ -1,6 +1,6 @@
 import React from 'react';
 import Languages from './Languages';
-import {parseTime} from '../../Utils/parseTime';
+import parseTime from '../../Utils/parseTime';
 
 const RepoInfoCarusel = ({repo, i}) => {
     return (

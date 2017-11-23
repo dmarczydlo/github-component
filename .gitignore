@@ -18,5 +18,5 @@ npm-debug.log
 #IDE
 .idea/*
 *.swp
-
+yarn-error.log
 server
