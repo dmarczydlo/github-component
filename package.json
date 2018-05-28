@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "prettier-eslint-cli": "^4.4.0",
-    "react-scripts": "1.1.1",
+    "react-scripts": "1.1.2",
     "babel-eslint": "^8.0.1",
     "eslint": "^4.10.0",
     "eslint-config-airbnb": "^16.1.0",
@@ -25,9 +25,9 @@
     "graphql-tag": "^2.5.0",
     "install": "^0.11.0",
     "react": "16.3.0",
-    "react-apollo": "2.1.0",
-    "react-dom": "16.2.0",
-    "react-modal": "3.3.2",
+    "react-apollo": "2.1.1",
+    "react-dom": "16.3.0",
+    "react-modal": "3.4.1",
     "react-router-dom": "^4.0.0",
     "tachyons": "^4.3.1",
     "uninstall": "0.0.0"
