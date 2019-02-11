@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "prettier-eslint-cli": "^4.4.0",
-    "react-scripts": "1.1.2",
+    "react-scripts": "2.1.5",
     "babel-eslint": "^8.0.1",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^17.0.0",
