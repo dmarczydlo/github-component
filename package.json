@@ -18,7 +18,7 @@
     "apollo-client": "^2.0.3",
     "apollo-link-context": "^1.0.1",
     "apollo-link-error": "^1.0.1",
-    "apollo-link-http": "^1.2.0",
+    "apollo-link-http": "^1.5.12",
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
     "graphql": "^14.0.0-rc.1",
