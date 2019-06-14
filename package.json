@@ -17,7 +17,7 @@
     "apollo-cache-inmemory": "^1.1.1",
     "apollo-client": "^2.0.3",
     "apollo-link-context": "^1.0.18",
-    "apollo-link-error": "^1.0.1",
+    "apollo-link-error": "^1.1.11",
     "apollo-link-http": "^1.2.0",
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
