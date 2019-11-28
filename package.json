@@ -19,7 +19,7 @@
     "apollo-link-context": "^1.0.1",
     "apollo-link-error": "^1.0.1",
     "apollo-link-http": "^1.2.0",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
     "graphql": "^14.0.0-rc.1",
     "graphql-tag": "^2.5.0",
